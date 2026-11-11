@@ -1,0 +1,308 @@
+.studio-main {
+    margin-left: 245px;
+    padding: 45px;
+    width: calc(100% - 245px);
+    max-width: 1500px;
+}
+
+/* Header */
+
+.studio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 20px;
+}
+
+.studio-header h1 {
+    font-size: 36px;
+    margin: 8px 0;
+}
+
+.studio-header h1 span {
+    color: var(--orange);
+}
+
+.studio-header p {
+    color: var(--muted);
+}
+
+/* Idea Form Layout */
+
+.idea-container {
+    display: grid;
+    grid-template-columns: 1.7fr 0.8fr;
+    gap: 22px;
+}
+
+.idea-form,
+.idea-tip {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 30px;
+    border-radius: 16px;
+    min-width: 0;
+}
+
+.idea-form label {
+    display: block;
+    color: var(--purple);
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    margin: 20px 0 9px;
+}
+
+.idea-form input,
+.idea-form textarea,
+.idea-form select {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    border-radius: 9px;
+    background: #100d18;
+    border: 1px solid #ffffff20;
+    color: white;
+    font-family: inherit;
+    outline: none;
+    font-size: 14px;
+}
+
+.idea-form textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.idea-form input:focus,
+.idea-form textarea:focus,
+.idea-form select:focus {
+    border-color: var(--purple);
+}
+
+.idea-form select option {
+    background: #171320;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.idea-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.idea-footer span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* Idea Tip */
+
+.idea-tip {
+    background: linear-gradient(150deg,#302047,#171320);
+    position: relative;
+    overflow: hidden;
+}
+
+.idea-tip > span {
+    color: var(--orange);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.idea-tip h3 {
+    font-family: 'Playfair Display',serif;
+    font-size: 30px;
+    margin: 20px 0 10px;
+}
+
+.idea-tip p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.tip-art {
+    font-size: 120px;
+    text-align: center;
+    color: var(--purple);
+    margin: 30px 0;
+}
+
+.idea-tip small {
+    color: var(--orange);
+}
+
+.status-message {
+    margin-top: 15px;
+    font-size: 13px;
+    color: var(--purple);
+}
+
+/* AI Directions */
+
+.directions-section {
+    margin-top: 55px;
+}
+
+.directions-section h2 {
+    font-family: 'Playfair Display',serif;
+    margin: 12px 0 25px;
+}
+
+.directions-section h2 span {
+    color: var(--orange);
+}
+
+.directions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.direction-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 23px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.direction-card h3 {
+    margin: 12px 0;
+}
+
+.direction-card p,
+.direction-card li {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.direction-card ul {
+    padding-left: 18px;
+}
+
+.direction-card button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #302047;
+    border: 1px solid var(--purple);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.direction-card button:hover {
+    background: #493066;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+
+    .studio-main {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+        padding: 25px;
+    }
+
+    .idea-container {
+        grid-template-columns: 1fr;
+    }
+
+    .idea-tip {
+        display: none;
+    }
+
+    .directions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .studio-main {
+        margin-left: 0;
+        width: 100%;
+        padding: 22px 15px;
+    }
+
+    .studio-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .studio-header h1 {
+        font-size: 27px;
+    }
+
+    .idea-container {
+        grid-template-columns: 1fr;
+    }
+
+    .idea-form {
+        padding: 19px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .idea-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .idea-footer button {
+        width: 100%;
+    }
+
+    .directions-section {
+        margin-top: 38px;
+    }
+
+    .directions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .direction-card {
+        padding: 19px;
+    }
+}
+
+/* Small Mobile */
+
+@media (max-width: 380px) {
+
+    .studio-main {
+        padding: 18px 12px;
+    }
+
+    .studio-header h1 {
+        font-size: 24px;
+    }
+
+    .idea-form {
+        padding: 15px;
+    }
+
+    .direction-card {
+        padding: 16px;
+    }
+}
