@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Studio | RangSutra AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/studio.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="studio-body">
+
+<aside class="sidebar">
+    <a href="index.html" class="logo">
+        <span class="logo-icon">R</span>
+        RangSutra<span class="ai">AI</span>
+    </a>
+
+    <p class="sidebar-label">WORKSPACE</p>
+    <a class="side-link" href="dashboard.html">▦ Dashboard</a>
+    <a class="side-link active" href="studio.html">✦ Idea Studio</a>
+    <a class="side-link" href="editor.html">✎ Creative Editor</a>
+    <a class="side-link" href="dashboard.html#projects">▣ My Projects</a>
+</aside>
+
+<main class="studio-main">
+
+    <header class="studio-header">
+        <div>
+            <span class="section-label">CREATIVE WORKSPACE / 01</span>
+            <h1>Idea Studio <span>✦</span></h1>
+            <p>Every masterpiece begins with a single thought.</p>
+        </div>
+        <a href="dashboard.html" class="secondary-btn">← Dashboard</a>
+    </header>
+
+    <section class="idea-container">
+
+        <div class="idea-form">
+            <label for="ideaTitle">PROJECT TITLE</label>
+            <input type="text" id="ideaTitle"
+                   placeholder="Give your idea a name...">
+
+            <label for="ideaInput">YOUR ORIGINAL IDEA</label>
+            <textarea id="ideaInput"
+                placeholder="Describe your imagination here... What do you want to create? What's the story behind your idea?"
+                rows="7"></textarea>
+
+            <div class="form-row">
+                <div>
+                    <label for="category">CREATIVE CATEGORY</label>
+                    <select id="category">
+                        <option value="Story">Story</option>
+                        <option value="Poetry">Poetry</option>
+                        <option value="Script">Script</option>
+                        <option value="Art Concept">Art Concept</option>
+                        <option value="Content">Content</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="language">LANGUAGE</label>
+                    <select id="language">
+                        <option value="English">English</option>
+                        <option value="Bengali">Bengali</option>
+                        <option value="Hindi">Hindi</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="instructions">ADDITIONAL INSTRUCTIONS (OPTIONAL)</label>
+            <textarea id="instructions" rows="3"
+                placeholder="Any particular mood, style or creative preference?"></textarea>
+
+            <div class="idea-footer">
+                <span>✦ Your original idea remains yours.</span>
+                <button id="generateBtn" class="primary-btn">
+                    Generate Directions ↗
+                </button>
+            </div>
+
+            <p id="statusMessage" class="status-message"></p>
+        </div>
+
+        <div class="idea-tip">
+            <span>✦ CREATIVE TIP</span>
+            <h3>Think freely.</h3>
+            <p>You don't need a perfect idea. Start with a simple thought, emotion or imagination. Let AI help you explore its possibilities.</p>
+            <div class="tip-art">✳</div>
+            <small>Human imagination × AI inspiration</small>
+        </div>
+
+    </section>
+
+    <section class="directions-section" id="directionsSection" hidden>
+        <div class="section-label">YOUR CREATIVE POSSIBILITIES</div>
+        <h2>Three directions. <span>One imagination.</span></h2>
+        <div id="directionsGrid" class="directions-grid"></div>
+    </section>
+
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/studio.js"></script>
+</body>
+</html>

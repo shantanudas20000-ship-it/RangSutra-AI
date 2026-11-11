@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | RangSutra AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">R</span>
+            RangSutra<span class="ai">AI</span>
+        </a>
+
+        <p class="sidebar-label">WORKSPACE</p>
+
+        <a class="side-link active" href="dashboard.html">
+            <i data-lucide="layout-dashboard"></i> Dashboard
+        </a>
+
+        <a class="side-link" href="studio.html">
+            <i data-lucide="lightbulb"></i> Idea Studio
+        </a>
+
+        <a class="side-link" href="editor.html">
+            <i data-lucide="pen-line"></i> Creative Editor
+        </a>
+
+        <a class="side-link" href="#projects">
+            <i data-lucide="folder"></i> My Projects
+        </a>
+
+        <p class="sidebar-label">ACCOUNT</p>
+
+        <a class="side-link" href="index.html">
+            <i data-lucide="home"></i> Home
+        </a>
+
+        <div class="sidebar-bottom">
+            <div class="profile">
+                <div class="avatar">S</div>
+                <div>
+                    <strong>Creator</strong>
+                    <small>Creative Member</small>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div>
+                <span class="section-label">YOUR CREATIVE SPACE</span>
+                <h1>Dashboard</h1>
+            </div>
+
+            <a href="studio.html" class="primary-btn">
+                + New Project
+            </a>
+
+        </header>
+
+
+        <section class="welcome-card">
+
+            <div>
+                <span class="welcome-label">
+                    WELCOME TO RANGSUTRA AI ✦
+                </span>
+
+                <h2>Every great creation<br>starts with an idea.</h2>
+
+                <p>
+                    Ready to turn your imagination into something meaningful?
+                </p>
+
+                <a href="studio.html" class="primary-btn">
+                    Start Creating ↗
+                </a>
+            </div>
+
+            <div class="welcome-art">✳</div>
+
+        </section>
+
+
+        <!-- Statistics -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <span>Total Projects</span>
+                <h2 id="totalProjects">0</h2>
+                <small>Saved creative projects</small>
+            </div>
+
+            <div class="stat-card">
+                <span>AI Directions</span>
+                <h2 id="totalDirections">0</h2>
+                <small>Generated directions</small>
+            </div>
+
+            <div class="stat-card">
+                <span>Creative Activity</span>
+                <h2 id="totalActivity">0</h2>
+                <small>Recorded contributions</small>
+            </div>
+
+        </section>
+
+
+        <!-- Project History -->
+
+        <section class="projects-section" id="projects">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">YOUR WORK</span>
+                    <h2>Project History</h2>
+                </div>
+
+                <a href="studio.html">Create New ↗</a>
+
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+
+                <div class="empty-project">
+                    <div>✦</div>
+                    <h3>Your creative journey begins here</h3>
+                    <p>Create your first project in Idea Studio.</p>
+
+                    <a href="studio.html" class="primary-btn">
+                        Create Project
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Creative Tools -->
+
+        <section class="tools-section">
+
+            <span class="section-label">EXPLORE TOOLS</span>
+            <h2>Creative Tools</h2>
+
+            <div class="tools-grid">
+
+                <a href="studio.html" class="tool-card">
+                    <span>✦</span>
+                    <h3>Idea Studio</h3>
+                    <p>Explore your original ideas.</p>
+                </a>
+
+                <a href="studio.html" class="tool-card">
+                    <span>◈</span>
+                    <h3>AI Directions</h3>
+                    <p>Discover three creative perspectives.</p>
+                </a>
+
+                <a href="editor.html" class="tool-card">
+                    <span>✎</span>
+                    <h3>Creative Editor</h3>
+                    <p>Write and refine your content.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <footer class="dashboard-footer">
+            RangSutra AI — Human imagination, amplified.
+        </footer>
+
+    </main>
+
+
+    <script src="js/dashboard.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

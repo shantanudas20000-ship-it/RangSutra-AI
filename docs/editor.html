@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creative Editor | RangSutra AI</title>
+
+    <link rel="stylesheet" href="css/editor.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <header class="editor-header">
+        <a href="dashboard.html" class="logo">
+            <i data-lucide="sparkles"></i>
+            RangSutra AI
+        </a>
+
+        <span>Creative Editor</span>
+
+        <a href="dashboard.html" class="back-link">
+            <i data-lucide="arrow-left"></i>
+            Back to Dashboard
+        </a>
+    </header>
+
+    <main class="editor-container">
+
+        <!-- Main Editor -->
+        <section class="editor-main">
+
+            <div class="editor-heading">
+                <span class="section-tag">YOUR CREATIVE WORKSPACE</span>
+                <h1>Your Creative Space</h1>
+                <p>AI amplifies your imagination, never replaces it.</p>
+            </div>
+
+            <div class="editor-fields">
+
+                <label for="projectTitle">Project Title</label>
+
+                <input
+                    type="text"
+                    id="projectTitle"
+                    placeholder="Enter your project title"
+                >
+
+                <label for="editorContent">Your Content</label>
+
+                <textarea
+                    id="editorContent"
+                    placeholder="Start writing your creative masterpiece..."
+                ></textarea>
+
+            </div>
+
+            <div class="editor-actions">
+
+                <button id="saveBtn">
+                    <i data-lucide="save"></i>
+                    Save Project
+                </button>
+
+                <button id="rewriteBtn">
+                    <i data-lucide="wand-sparkles"></i>
+                    Rewrite with AI
+                </button>
+
+                <button id="improveBtn">
+                    <i data-lucide="spell-check"></i>
+                    Improve Grammar
+                </button>
+
+            </div>
+
+            <p class="editor-note">
+                <i data-lucide="shield-check"></i>
+                Your original idea always remains yours.
+            </p>
+
+        </section>
+
+
+        <!-- Creator Credit Ledger -->
+        <aside class="editor-sidebar">
+
+            <div class="ledger-heading">
+                <span class="section-tag">TRANSPARENCY</span>
+
+                <h2>
+                    <i data-lucide="history"></i>
+                    Creator Credit Ledger
+                </h2>
+
+                <p>
+                    Track how humans and AI contribute to your project.
+                </p>
+            </div>
+
+            <!-- Contribution Legend -->
+            <div class="ledger-legend">
+
+                <div class="legend-item">
+                    <span class="legend-dot human-dot"></span>
+                    <span>Human Contribution</span>
+                </div>
+
+                <div class="legend-item">
+                    <span class="legend-dot ai-dot"></span>
+                    <span>AI Contribution</span>
+                </div>
+
+            </div>
+
+            <!-- Dynamic Ledger Entries -->
+            <div id="creditLedger" class="credit-ledger">
+                <p>Your creative contributions will appear here.</p>
+            </div>
+
+            <div class="ledger-disclaimer">
+                <i data-lucide="info"></i>
+                <p>
+                    This ledger records project activity.
+                    It does not independently verify authorship.
+                </p>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/editor.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://rangsutra-ai.onrender.com/api";
 
 async function apiRequest(endpoint, data) {
     const response = await fetch(`${API_BASE}/${endpoint}`, {
